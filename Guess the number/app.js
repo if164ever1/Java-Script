@@ -8,7 +8,7 @@ function guessNum(number){
             alert("You are guess this number");
         } else {
              alert("Oh, wrong. Try again!")
+             tries++; 
         }
-        tries++;    
-    }else alert("You are lose")
+    }else return alert("You are lose")
 }
