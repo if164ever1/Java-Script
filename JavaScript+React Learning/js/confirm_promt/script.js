@@ -15,3 +15,4 @@ answers[2] = prompt("How are you?", "");
 
 
 document.write(answers);
+ 
