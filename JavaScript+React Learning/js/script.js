@@ -8,12 +8,20 @@ const personalMovieDb = {
     private: false
 }
 
-const answer1 = prompt("One the last watching film?"),
-      answer2 = prompt("How do you rate it ?"),
-      answer3 = prompt("One the last watching film?"),
-      answer4 = prompt("How do you rate it ?");
+for(let i = 0; i < 2; ++i){
+    const a = prompt("One the last watching film?"),
+          b = prompt("How do you rate it ?");
+    
+    if(a != null && b != null && a != '' && b != '' && a.length < 50){
+        personalMovieDb.movies[a] = b;    
+        console.log('done');
+    }
+    else{
+        console.log('error');
+        --i;
+    }
+}
 
-personalMovieDb.movies[answer1] = answer2;
-personalMovieDb.movies[answer3] = answer4;
+if(personalMovieDb){}
 
 console.log(personalMovieDb);
